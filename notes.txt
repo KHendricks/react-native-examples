@@ -1,0 +1,6 @@
+How to start the react native bundler:
+Inside the project directory $ npm start
+
+Install prettier:
+Enable the prttier extenstion
+CMD + , and Enable Format on Save
