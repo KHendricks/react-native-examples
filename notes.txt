@@ -4,3 +4,15 @@ Inside the project directory $ npm start
 Install prettier:
 Enable the prttier extenstion
 CMD + , and Enable Format on Save
+
+Creating a new project
+npx expo-cli init projectName
+
+Install react navigation for stack navigator
+npm install react-navigation
+
+Icons install because of expo-cli install
+https://github.com/expo/vector-icons
+
+Axios
+npm install axios
