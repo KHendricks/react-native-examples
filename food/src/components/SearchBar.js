@@ -1,6 +1,12 @@
 import React, { useState } from "react";
-import { View, Text, StyleSheet, TextInput } from "react-native";
-import { Feather } from "@expo/vector-icons";
+import {
+    View,
+    Text,
+    StyleSheet,
+    TextInput,
+    TouchableOpacity
+} from "react-native";
+import { Feather, MaterialIcons } from "@expo/vector-icons";
 
 const SearchBar = ({ term, onTermChange, onTermSubmit }) => {
     return (
@@ -15,6 +21,12 @@ const SearchBar = ({ term, onTermChange, onTermSubmit }) => {
                 autoCapitalize="none"
                 onEndEditing={onTermSubmit}
             />
+            <TouchableOpacity
+                style={{ justifyContent: "center" }}
+                onPress={newTerm => onTermChange("")}
+            >
+                <MaterialIcons style={styles.clearIcon} name="clear" />
+            </TouchableOpacity>
         </View>
     );
 };
@@ -35,6 +47,11 @@ const styles = StyleSheet.create({
     },
     iconStyle: {
         fontSize: 35,
+        alignSelf: "center",
+        marginHorizontal: 15
+    },
+    clearIcon: {
+        fontSize: 20,
         alignSelf: "center",
         marginHorizontal: 15
     }
