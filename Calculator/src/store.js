@@ -45,8 +45,8 @@ const reducer = (state = initialState, action) => {
                 return {
                     ...state,
                     calculatorStack: (
-                        parseInt(state.prevStack) +
-                        parseInt(state.calculatorStack)
+                        parseFloat(state.prevStack) +
+                        parseFloat(state.calculatorStack)
                     ).toString(),
                     prevStack: "",
                     operator: "",
@@ -55,8 +55,8 @@ const reducer = (state = initialState, action) => {
                 return {
                     ...state,
                     calculatorStack: (
-                        parseInt(state.prevStack) -
-                        parseInt(state.calculatorStack)
+                        parseFloat(state.prevStack) -
+                        parseFloat(state.calculatorStack)
                     ).toString(),
                     prevStack: "",
                     operator: "",
@@ -65,8 +65,8 @@ const reducer = (state = initialState, action) => {
                 return {
                     ...state,
                     calculatorStack: (
-                        parseInt(state.prevStack) /
-                        parseInt(state.calculatorStack)
+                        parseFloat(state.prevStack) /
+                        parseFloat(state.calculatorStack)
                     ).toString(),
                     prevStack: "",
                     operator: "",
@@ -75,8 +75,8 @@ const reducer = (state = initialState, action) => {
                 return {
                     ...state,
                     calculatorStack: (
-                        parseInt(state.prevStack) *
-                        parseInt(state.calculatorStack)
+                        parseFloat(state.prevStack) *
+                        parseFloat(state.calculatorStack)
                     ).toString(),
                     prevStack: "",
                     operator: "",
